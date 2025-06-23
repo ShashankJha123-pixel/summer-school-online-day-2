@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-+yWL+Dj3RsyID+K4CgqKZzKZzDQW2S+P+iE/VcOyENtAQKpmPv5QxFdH2OljxkwNklOxN9kBdUoAJ9hAVxKoVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e0e0e0;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      text-align: center;
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #03dac5;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #ffffff;
+      margin: 10px 0;
+    }
+
+    p.bio {
+      font-size: 16px;
+      color: #b0b0b0;
+      margin-bottom: 25px;
+    }
+
+    ul.hobbies {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 25px;
+      text-align: left;
+    }
+
+    ul.hobbies li {
+      padding: 10px;
+      background-color: #2a2a2a;
+      margin-bottom: 10px;
+      border-left: 4px solid #03dac5;
+      border-radius: 5px;
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .contact-section {
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 22px;
+      margin: 8px 6px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      letter-spacing: 0.5px;
+      color: white;
+    }
+
+    .buttons i {
+      margin-right: 8px;
+    }
+
+    .email-btn {
+      background-color: #4caf50;
+    }
+
+    .email-btn:hover {
+      background-color: #388e3c;
+      transform: translateY(-2px);
+    }
+
+    .linkedin-btn {
+      background-color: #0a66c2;
+    }
+
+    .linkedin-btn:hover {
+      background-color: #084a8c;
+      transform: translateY(-2px);
+    }
+
+    .github-btn {
+      background-color: #24292e;
+    }
+
+    .github-btn:hover {
+      background-color: #000;
+      transform: translateY(-2px);
+    }
+
+    h3 {
+      color: #03dac5;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="card" style="background-color: #1f1f1f;">
+    <img src="sj.png.jpeg" alt="Profile Picture" class="profile-img" />
+    <h1>Shashank Jha</h1>
+    <p class="bio">Front-End Developer who loves dark themes, clean UI, and building interactive web experiences.</p>
+
+    <h3>Hobbies</h3>
+    <ul class="hobbies">
+      <li>🎮 Gaming – I enjoy strategy and indie games that challenge creativity and logic.</li>
+      <li>🖋 Writing – Sharing thoughts on design, code, and productivity through blogging.</li>
+      <li>🌌 Stargazing – I spend nights observing constellations and learning astronomy.</li>
+    </ul>
+
+    <div class="contact-section">
+      <h3>Contact Me</h3>
+      <div class="buttons">
+        <a href="mailto:jhashashank840@gmail.com" class="email-btn">
+          <i class="fas fa-envelope"></i>Email
+        </a>
+        <a href="https://www.linkedin.com/in/shashank-jha-7134ab326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          class="linkedin-btn" target="_blank">
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+        <a href="https://github.com/ShashankJha123-pixel" class="github-btn" target="_blank">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
